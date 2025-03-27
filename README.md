@@ -33,7 +33,7 @@
 
 [![4-comma][images-fig1]](https://astroanimation.me)
 
-Figure 1. The final product.
+Figure 1. Unfortunately I did not have the patience nor frankly the time to keep finessing and tweaking this horribly made 3D mesh. I probably would have needed to just build on top of the mesh by using the quad draw tool, but at this point it's safe to say that just starting over using a polygon cube would have taken less time.
 
 <!-- Abstract -->
 ## Abstract
@@ -41,7 +41,7 @@ Currently I am seeing what it takes to take an AI generated mesh and make it usa
 
 [![4-comma][images-fig2]](https://astroanimation.me)
 
-Figure 2. Flora's Yonkoma Iteration 1; This is the first iteration of the yonkoma comic, it outlines the rough sketches and idea for the main comic, as well as the layout. The comic is meant to be read as; 1. top right, 2. bottom right, 3. top left, 4. bottom left. 
+Figure 2. This is the image of Wilson used to generate the mesh. I chose it because it seemed fairly easy to interpret. It has a blank background and a clear subject. 
 
 <!-- Introduction and Related Works -->
 ## Introduction and Related Works
@@ -51,11 +51,11 @@ I then downloaded the model to see what needed to be fixed in Maya with the init
 
 [![4-comma][images-fig3]](https://astroanimation.me)
 
-Figure 3. Flora's Yonkoma Iteration 2; This iteration emphasizes the comic art effects of speed lines for motion and cross hatching for shadows.
+Figure 3. Meshy.ai produced these models from the previous image. I'm unsure how it came to the conclusion that the subject in the image needed more appendages or random floating artifacts. I did not want to spend additonal tokens to re-render the result, so I am unsure if anything different would have occured if I had.
 
 [![4-comma][images-fig4]](https://astroanimation.me)
 
-Figure 4. Flora's Yonkoma Iteration 3; This iteration experiments with color and color theory. Warm colors are used to show agency while cool colors are used for calmness. Primary colors were used to give the piece a "pop art" type aesthetic.
+Figure 4. I had Meshy.ai create the texture for the model as well as UV unwrap it. Again, I'm not sure why it chose this strange approach to applying the texture to the model. Normally I would expect it to find the front of the model and place the origninal image there, and fill in the rest with what it thinks should be the rest of the image.
 
 ## Methodology
 
@@ -64,28 +64,28 @@ I then struggled to get the vertices to merge normally, and upon further inspect
 
 [![4-comma][images-fig5]](https://astroanimation.me)
 
-Figure 5. Flora's Yonkoma Iteration 3; This iteration experiments with color and color theory. Warm colors are used to show agency while cool colors are used for calmness. Primary colors were used to give the piece a "pop art" type aesthetic.
+Figure 5. These 3 models were the results of trying to reduce the polygon count to something reasonable. After 3 attempts it began punching holes into the model, so I deceided to try and reduce the mesh myself with the tools I knew how to use.
 
 [![4-comma][images-fig6]](https://astroanimation.me)
 
-Figure 6. Flora's Yonkoma Itteration 4; This iteration begins the process of adding Flora's flowers to her body. These flowers will then be duplicted and added to the subsequent smaller yonkoma. This process can sometimes be rather tedious.
+Figure 6. This is the UV map of the model. It is a complete catastrophe. If I were able to finish the main model properly, I would have to use the auto-unwrap tool to overwrite the current UV's and then proceed from there.
 
 ## Result and Future Work
 Sadly, there comes a time in a project where you must accept that the effort is not worth the time and pain, and this is one of those moments. The amount of effort needed to make this nightmare of a mesh functional is far beyond anything reasonable, and I have a hard time believing that this is supposed to be a “time saving” alternative to just building your own character, or even learning the tools needed to build your own mesh. This isn’t even getting into the UV and texturing side of things, this is just an attempt to make the mesh itself functional.
 
 [![4-comma][images-fig7]](https://astroanimation.me)
 
-Figure 7. Flora's Yonkoma Iteration 3; This iteration experiments with color and color theory. Warm colors are used to show agency while cool colors are used for calmness. Primary colors were used to give the piece a "pop art" type aesthetic.
+Figure 7. For some unknown reason, not all of the faces on the model were attached to the main mesh. This made things like using the fill hole tool and the bridge tool impossible to use. I had to go through at least 3 times and separate and delete these faces from the main mesh. 
 
 ## Conclusion
 In conclusion,  I suppose if all you were doing was just placing this mesh in a static scene it might be useable, but even then the amount of faces and vertices would make render times outrageous. While fun to experiment with, AI at this time is not capable of creating a time-saving alternative to manually modeling.
 
 [![4-comma][images-fig8]](https://astroanimation.me)
 
-Figure 8. Flora's Yonkoma Iteration 3; This iteration experiments with color and color theory. Warm colors are used to show agency while cool colors are used for calmness. Primary colors were used to give the piece a "pop art" type aesthetic.
+Figure 8. This was the point at which I was begining to give up. Underneath some of the faces on the mesh were additional, very small faces interfering with the topology of the model. These were scattered about randomly throughout the mesh. After deleting these faces I then began the long process of rebuilding all of the holes it had left behind.
 
 <!-- Bibliography -->
-## References
+<!-- ## References
 
 [1] Craig B Caldwell. 2024. Breaking the Story Formula. In SIGGRAPH Asia 2024 Courses. 1–11.
 
@@ -107,9 +107,9 @@ Portfolio Website: [astroanimation.me](https://astroanimation.me)
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-To Flora, for always believing in me even when I didn't. And to Wilson, for always listening to my crazy rants and being a shoulder to cry and laugh on.
+To Wilson, my silent partner in crime. And to anyone who has ever felt discouraged at the idea of AI replacing them, it's going to be a hot minute let me assure you :)
 
-This work is submitted as part of Assignment 1 for the VIZA 626 course at Texas A&M University, under the instruction of Professor You-Jin Kim, during the Spring 2025 semester.
+This work is submitted as part of Assignment 2 for the VIZA 626 course at Texas A&M University, under the instruction of Professor You-Jin Kim, during the Spring 2025 semester.
 
 VIZA 626 Class Website: [https://sites.google.com/view/viza626/](https://sites.google.com/view/viza626/home)
 
