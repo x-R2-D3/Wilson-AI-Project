@@ -53,25 +53,36 @@ I then downloaded the model to see what needed to be fixed in Maya with the init
 
 Figure 3. Flora's Yonkoma Iteration 2; This iteration emphasizes the comic art effects of speed lines for motion and cross hatching for shadows.
 
+[![4-comma][images-fig4]](https://astroanimation.me)
+
+Figure 4. Flora's Yonkoma Iteration 3; This iteration experiments with color and color theory. Warm colors are used to show agency while cool colors are used for calmness. Primary colors were used to give the piece a "pop art" type aesthetic.
+
 ## Methodology
 
 Once this process was finished, I decided to take a glance at the UV map just to see what was waiting on me for the future. To my horror, the AI had unwrapped the mesh in such a way that individual faces were littered throughout the map haphazardly rather than unwrapping the mesh in one clean UV shell. I then began the process of removing the legs from the main body in order to begin modeling them properly. After deleting the connecting faces from the legs to the body, I then separated the mesh from the body expecting to now have 3 meshes; the body, left leg and right leg. Instead I found that the mesh had again separated itself into individual faces rather than one continuous mesh, so I had to collect all the correct faces and combine them again using the merge vertices tool.
 I then struggled to get the vertices to merge normally, and upon further inspection I found that there were faces on top of faces, and even smaller faces under that. I then began the process of using the cleanup tool,  retopologize tool, smooth mesh tool and the merge vertices tool to try and fix this issue without having to go in and individually delete faces. Unfortunately this was never successful, and after separating the mesh again, I found that there were even more faces that were not attached to each other, so I took advantage of this and deleted those faces accepting my fate; I would have to manually rebuild the holes in the mesh.
 
-[![4-comma][images-fig4]](https://astroanimation.me)
+[![4-comma][images-fig5]](https://astroanimation.me)
 
-Figure 4. Flora's Yonkoma Iteration 3; This iteration experiments with color and color theory. Warm colors are used to show agency while cool colors are used for calmness. Primary colors were used to give the piece a "pop art" type aesthetic.
+Figure 5. Flora's Yonkoma Iteration 3; This iteration experiments with color and color theory. Warm colors are used to show agency while cool colors are used for calmness. Primary colors were used to give the piece a "pop art" type aesthetic.
+
+[![4-comma][images-fig6]](https://astroanimation.me)
+
+Figure 6. Flora's Yonkoma Itteration 4; This iteration begins the process of adding Flora's flowers to her body. These flowers will then be duplicted and added to the subsequent smaller yonkoma. This process can sometimes be rather tedious.
 
 ## Result and Future Work
 Sadly, there comes a time in a project where you must accept that the effort is not worth the time and pain, and this is one of those moments. The amount of effort needed to make this nightmare of a mesh functional is far beyond anything reasonable, and I have a hard time believing that this is supposed to be a “time saving” alternative to just building your own character, or even learning the tools needed to build your own mesh. This isn’t even getting into the UV and texturing side of things, this is just an attempt to make the mesh itself functional.
 
-[![4-comma][images-fig5]](https://astroanimation.me)
+[![4-comma][images-fig7]](https://astroanimation.me)
 
-Figure 5. Flora's Yonkoma Itteration 4; This iteration begins the process of adding Flora's flowers to her body. These flowers will then be duplicted and added to the subsequent smaller yonkoma. This process can sometimes be rather tedious.
+Figure 7. Flora's Yonkoma Iteration 3; This iteration experiments with color and color theory. Warm colors are used to show agency while cool colors are used for calmness. Primary colors were used to give the piece a "pop art" type aesthetic.
 
 ## Conclusion
 In conclusion,  I suppose if all you were doing was just placing this mesh in a static scene it might be useable, but even then the amount of faces and vertices would make render times outrageous. While fun to experiment with, AI at this time is not capable of creating a time-saving alternative to manually modeling.
 
+[![4-comma][images-fig8]](https://astroanimation.me)
+
+Figure 8. Flora's Yonkoma Iteration 3; This iteration experiments with color and color theory. Warm colors are used to show agency while cool colors are used for calmness. Primary colors were used to give the piece a "pop art" type aesthetic.
 
 <!-- Bibliography -->
 ## References
@@ -117,12 +128,14 @@ VIZA 626 Class Website: [https://sites.google.com/view/viza626/](https://sites.g
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/othneildrew
 [product-screenshot]: images/screenshot.png
-[images-fig1]: fig1.JPG
-[images-fig2]: fig2.JPG
-[images-fig3]: fig3.JPG
-[images-fig4]: fig4.JPG
-[images-fig5]: fig5.JPG
-[images-fig6]: images/fig6.png
+[images-fig1]: Fig1.png
+[images-fig2]: Fig2.JPG
+[images-fig3]: Fig3.png
+[images-fig4]: Fig4.png
+[images-fig5]: Fig5.png
+[images-fig6]: Fig6.png
+[images-fig7]: Fig7.png
+[images-fig8]: Fig8.png
 [Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
 [Next-url]: https://nextjs.org/
 [React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
