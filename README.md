@@ -21,7 +21,7 @@
   <h3 align="center">Wilson Project</h3>
 
   <p align="center">
-    The pain and suffering behind taking an AI generated 3D model and making it funtional
+    The pain and suffering behind taking an AI generated 3D model and making it functional
     <br />
     <br />
     <br />
