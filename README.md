@@ -68,7 +68,7 @@ Figure 5. These 3 models were the results of trying to reduce the polygon count 
 
 [![4-comma][images-fig6]](https://astroanimation.me)
 
-Figure 6. On left: This is the original UV map of the model. It is a completely unusable with the top portion looking something like a barcode. On right: This was my attempt to auto UV unwrap the mesh. As you can see, further edits to the UV were not possible due to the model needing additional "cleanup".
+Figure 6. On left: This is the original UV map of the model. It is completely unusable with the top portion looking something like a barcode. On right: This was my attempt to auto UV unwrap the mesh. As you can see, further edits to the UV were not possible due to the model needing additional "cleanup".
 
 ## Result and Future Work
 Sadly, there comes a time in a project where you must accept that the effort is not worth the time and pain, and this is one of those moments. The amount of effort needed to make this nightmare of a mesh functional is far beyond anything reasonable, and I have a hard time believing that this is supposed to be a “time saving” alternative to just building your own character, or even learning the tools needed to build your own mesh. This isn’t even getting into the UV and texturing side of things, this is just an attempt to make the mesh itself functional.
